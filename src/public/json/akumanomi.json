@@ -1,0 +1,224 @@
+{
+  "paramecia": [
+    {
+      "name": "Gomu Gomu no Mi",
+      "description": "Grants the user's body the properties of rubber, effectively turning them into a Rubber Human.",
+      "image": "./images/akumanomi/gomunomi.jpg",
+      "user": "Monkey D. Luffy"
+    },
+    {
+      "name": "Awa Awa no Mi",
+      "description": "Allows the user to emit and control soap and bubbles that can not only clean off dirt but can also 'clean off' power, making the user a Soap Human.",
+      "image": "./images/akumanomi/awanomi.jpg",
+      "user": "Kalifa"
+    },
+    {
+      "name": "Baku Baku no Mi",
+      "description": "Allows the user to eat anything. The eaten items can then be merged into and manifested from the user's body or be combined to create something else.",
+      "image": "./images/akumanomi/bakunomi.jpg",
+      "user": "Wapol"
+    },
+    {
+      "name": "Bara Bara no Mi",
+      "description": "Allows the user to split their own body into pieces and control said pieces however they wish, as well as making the user immune to slashing attacks, making the user a Splitting Human.",
+      "image": "./images/akumanomi/baranomi.jpg",
+      "user": "Buggy"
+    },
+    {
+      "name": "Bomu Bomu no Mi",
+      "description": "Allows the user to make any part of their body explode, whether it be their limbs, hair, mucus, or even breath, making the user a Bomb Human.",
+      "image": "./images/akumanomi/bomunomi.png",
+      "user": "Mr. 5"
+    },
+    {
+      "name": "Doru Doru no Mi",
+      "description": "Allows the user to create large quantities of candle wax from their body and control it, making the user a Candle Human.",
+      "image": "./images/akumanomi/dorunomi.jpg",
+      "user": "Mr. 3"
+    },
+    {
+      "name": "Hana Hana no Mi",
+      "description": "Allows the user to replicate and sprout pieces of their body from the surface of any object or living thing. As further allusion to this, pinkish-white petal-like particles form at and then swirl away from where the parts sprout and vanish, as well as around the user itself.",
+      "image": "./images/akumanomi/hananomi.jpg",
+      "user": "Nico Robin"
+    },
+    {
+      "name": "Kage Kage no Mi",
+      "description": "Gives the user the ability to manifest and control shadows of living creatures, including their own, as physical and tangible forms. The user, becoming a Ruler of Shadows, can steal the shadows of other beings and insert them into different bodies, living or dead, which in the latter case enables the creation of zombies.",
+      "image": "./images/akumanomi/kagenomi.jpg",
+      "user": "Gecko Moria"
+    },
+    {
+      "name": "Kiro Kiro no Mi",
+      "description": "Allows the user to change their weight from 1 to 10,000 kilograms without, in any way, affecting the overall size of their bodies.",
+      "image": "./images/akumanomi/kironomi.jpg",
+      "user": "Miss Valentine"
+    },
+    {
+      "name": "Sube Sube no Mi",
+      "description": "Makes the user's body smooth and slippery, which in turn makes most attacks and objects slide off their body, protecting the user from harm in most situations.",
+      "image": "./images/akumanomi/subenomi.jpg",
+      "user": "Alvida"
+    },
+    {
+      "name": "Yomi Yomi no Mi",
+      "description": "Enhances the user's soul to the point where they resurrect after their first death, allowing them to live a second time and to use several other soul-based abilities, making the user a Reviving Human.",
+      "image": "./images/akumanomi/yominomi.jpg",
+      "user": "Brook"
+    },
+    {
+      "name": "Mero Mero no Mi",
+      "description": "Allows a range of attacks which use emotions of lust or perversion to transform opponents into stone.",
+      "image": "./images/akumanomi/meronomi.jpg",
+      "user": "Boa Hancock"
+    },
+    {
+      "name": "Mochi Mochi no Mi",
+      "description": "Allows the user to create, control, and transform into mochi.",
+      "image": "./images/akumanomi/mochinomi.jpg",
+      "user": "Charlotte Katakuri"
+    },
+    {
+      "name": "Jiki Jiki no Mi",
+      "description": "Allows the user to create magnetic forces and use them to control metal.",
+      "image": "./images/akumanomi/jikinomi.jpg",
+      "user": "Eustass Kid"
+    },
+    {
+      "name": "Ope Ope no Mi",
+      "description": "grants the ability to manifest a spherical space in which the user can manipulate the orientation, movements, and physical configuration of anything and anyone (themselves included) in a 'surgical' fashion, making the user a Free Modification Human.",
+      "image": "./images/akumanomi/openomi.jpg",
+      "user": "Tafalgar D. Water Law"
+    },
+    {
+      "name": "Gura Gura no Mi",
+      "description": "Allows the user to create vibrations, or 'quakes', making the user a Tremor Human.",
+      "image": "./images/akumanomi/guranomi.jpg",
+      "user": "Edward Newgate"
+    },
+    {
+      "name": "Ito Ito no Mi",
+      "description": "Allows the user to create and manipulate strings, making the user a String Human ",
+      "image": "./images/akumanomi/itonomi.jpg",
+      "user": "Donquixote Doflamingo"
+    },
+    {
+      "name": "Gasha Gasha no Mi",
+      "description": "allows the user to telekinetically disassemble objects and reassemble them into whatever they please, making them an Assimilation Human.",
+      "image": "./images/akumanomi/gashanomi.jpg",
+      "user": "Douglas Bullet"
+    }
+  ],
+  "logia": [
+    {
+      "name": "Goro Goro no Mi",
+      "description": "Grants the power to create, control, and transform into lightning at will, making its user a Lightning Human.",
+      "image": "./images/akumanomi/goronomi.png",
+      "user": "Enel"
+    },
+    {
+      "name": "Hie Hie no Mi",
+      "description": " Allows the user to create, control, and transform into ice at will, turning them into a Freezing Human.",
+      "image": "./images/akumanomi/hienomi.png",
+      "user": "Aokiji"
+    },
+    {
+      "name": "Mera Mera no Mi",
+      "description": "Allows the user to create, control, and transform into fire at will.",
+      "image": "./images/akumanomi/meranomi.jpg",
+      "user": "Porgas D. Ace"
+    },
+    {
+      "name": "Moku Moku no Mi",
+      "description": "Allows the user to create, control, and transform into smoke at will.",
+      "image": "./images/akumanomi/mokunomi.png",
+      "user": "Smoker"
+    },
+    {
+      "name": "Suna Suna no Mi",
+      "description": "Allows the user to create, control, and transform into sand at will, turning the user into a Sand Human.",
+      "image": "./images/akumanomi/sunanomi.png",
+      "user": "Crocodile"
+    },
+    {
+      "name": "Yami Yami no Mi",
+      "description": "Allows the user to create and control darkness at will, making them a Dark Man,",
+      "image": "./images/akumanomi/yaminomi.jpg",
+      "user": "Marshall D. Teach"
+    }
+  ],
+  "zoam": [
+    {
+      "name": "Hito Hito no Mi",
+      "model": [
+        {
+          "nick": "Human",
+          "desc": "Allows its user to transform into a hybrid of a human and a full human being at will.",
+          "user": "Tony Tony Chopper",
+          "image": "./images/akumanomi/hitonomi.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Inu Inu no Mi",
+      "model": [
+        {
+          "nick": "Okuchi no Makami",
+          "desc": "A Mythical Zoan-type Devil Fruit that allows the user to transform into a hybrid and full version of an ancient wolf deity at will.",
+          "user": "Yamato",
+          "image": "./images/akumanomi/inuokuchinomi.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Neko Neko no Mi",
+      "model": [
+        {
+          "nick": "Leopard",
+          "desc": "Allows its user to transform into a leopard hybrid and a full leopard at will, making the user a Leopard Human.",
+          "user": "Rob Lucci",
+          "image": "./images/akumanomi/nekonomi.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Ushi Ushi no Mi",
+      "model": [
+        {
+          "nick": "Giraffe",
+          "desc": "Allows its user to transform into a giraffe hybrid and a full giraffe at will, making the user a Giraffe Human.",
+          "user": "Kaku",
+          "image": "./images/akumanomi/ushigirafenomi.png"
+        },
+        {
+          "nick": "Bison",
+          "desc": "Allows its user to transform into a full bison or a half-bison hybrid at will.",
+          "user": "Dalton",
+          "image": "./images/akumanomi/ushibisonnomi.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Uo Uo no Mi",
+      "model": [
+        {
+          "nick": "Seiryu",
+          "desc": "A Mythical Zoan-type Devil Fruit that allows the user to transform into a hybrid and full version of an Azure Dragon at will.",
+          "user": "Kaidou",
+          "image": "./images/akumanomi/uonomi.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Sara Sara no Mi",
+      "model": [
+        {
+          "nick": "Axolotl",
+          "desc": "allows its user to turn into an axolotl hybrid and a full axolotl at will.",
+          "user": "Smiley",
+          "image": "./images/akumanomi/saranomi.jpg"
+        }
+      ]
+    }
+  ]
+}
