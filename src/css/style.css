@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Kalam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Kalam&family=Rampart+One&family=Rubik+Wet+Paint&display=swap");
+
 
 body {
   margin: 0px;
@@ -70,25 +71,25 @@ header {
   background-image: url("../public/images/image.png");
   margin-top: 4%;
   z-index: -1;
+  box-shadow: 5px 5px 10px #333;
 }
 
 /* * {box-sizing:border-box} */
+#impact-tittle,
+#impact-tittle1 {
+  font-family: "rampart one";
+  text-shadow: 5px 5px 10px black;
+  text-align: center;
+  color: rgb(229, 249, 54);
+}
 
 #impact-tittle {
   grid-column: 2/4;
   grid-row: 1;
-  text-align: center;
-  color: rgb(229, 249, 54);
-  font-family: "kalam";
-  text-shadow: 5px 5px 10px black;
 }
 #impact-tittle1 {
   grid-column: 8/10;
-  text-align: center;
-  color: rgb(229, 249, 54);
   grid-row: 1;
-  font-family: "kalam";
-  text-shadow: 5px 5px 10px black;
 }
 
 /* Slideshow container */
@@ -124,9 +125,21 @@ header {
 }
 
 /* INTRO HOME SECTION */
+#card {
+  grid-column: 1/11;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .intro-img {
-  width: 300px;
-  box-shadow: 5px 5px 10px #333;
+  width: 400px;
+  height: 300px;
+  align-self: center;
+  border-radius: 20px;
+  margin: 0px;
+  /* box-shadow: 5px 5px 10px #333; */
 }
 
 /* banners */
@@ -136,37 +149,82 @@ header {
 .welcome-banner3,
 .welcome-banner4,
 .welcome-banner5 {
-  grid-column: 2/10;
-  display: flex;
-  box-shadow: 5px 5px 5px #333;
+  border: 2px solid brown;
   margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: antiquewhite;
+  width: 400px;
+  height: 600px;
 }
-.welcome-banner {
+
+/* .welcome-banner1 {
+  grid-column: 1/4;
   grid-row: 3/4;
 }
-.welcome-banner1 {
-  grid-row: 4/5;
-  justify-content: right;
-}
 .welcome-banner2 {
-  grid-row: 5/6;
+  grid-column: 8/11;
+  grid-row: 3/4;
 }
 .welcome-banner3 {
+  grid-column: 3/6;
   grid-row: 6/7;
-  justify-content: right;
 }
 .welcome-banner4 {
-  grid-row: 7/8;
+  grid-column: 6/9;
+  grid-row: 6/7;
 }
+
 .welcome-banner5 {
-  grid-row: 8/9;
+  grid-column: 4/8;
+  grid-row: 3/4;
+} */
+
+/* sections into banners */
+.subtittle {
+  font-family: "kalam";
+  text-align: center;
+  text-shadow: 5px 5px 10px #333;
+}
+.home-text {
+  font-family: "indie flower";
+  text-align: center;
+  font-size: 1.3em;
+  margin: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  padding-bottom: 2px;
+}
+.sci {
+  position: relative;
+  display: flex;
   justify-content: right;
 }
 
-/* sections into banners */
-#char-intro {
-  background-color: rgb(151, 17, 17);
+.sci li {
+  list-style: none;
+  margin: 5px;
 }
-.style-intro {
-  justify-items: right;
+
+.sci li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 3px 6px #757373, 0 3px 6px #757373;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  background: white;
+  color: black;
 }

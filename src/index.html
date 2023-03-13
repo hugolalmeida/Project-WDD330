@@ -4,6 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="The Home page where you can see a summanry of allcontent and access another pages"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -12,36 +16,20 @@
       type="image/x-icon"
     />
     <title>Build Character Home</title>
+    <script src="js/main.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
-      <!-- Top navigation -->
-      <div class="topnav">
-        <div class="navbars">
-          <a href="#news">News</a>
-        </div>
-        <div class="navbars">
-          <a href="#contact">Contact</a>
-        </div>
-        <div>
-          <a href="index.html"
-            ><img class="logo" src="public/images/logo.jpg" alt="Logo"
-          /></a>
-        </div>
-        <div class="navbars">
-          <a href="#search">Search</a>
-        </div>
-        <div class="navbars">
-          <a href="#about">About</a>
-        </div>
-      </div>
-    </header>
+    <header id="main-header"></header>
     <main>
       <div class="home-grid">
         <!-- Slideshow container -->
         <div class="img-section">
-          <h1 id="impact-tittle">BUILD YOUR CHARACTER AND</h1>
-          <h1 id="impact-tittle1">BECOME THE KING OF THIS GENERATION</h1>
+          <h1 id="impact-tittle">BUILD YOUR CHARACTER AND BECOME</h1>
+          <h1 id="impact-tittle1">THE KING OF THIS GENERATION</h1>
           <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
@@ -66,93 +54,108 @@
             </div>
           </div>
         </div>
-        <div class="welcome-banner">
-          <div id="char-intro">
-            <h1>Create a Character</h1>
-            <img class="intro-img" src="./public/images/logo.jpg" alt="Logo" />
-          </div>
-          <p>
-            Build your own character in the One Piece Universe! Will you be the
-            next to conquer these seas?
-          </p>
-        </div>
-        <div class="welcome-banner1">
-          <p>
-            What is your style? Go ahead and choose the style that will make you
-            the best
-          </p>
-          <div class="style-intro">
+        <div id="card">
+          <section class="welcome-banner1">
             <img
               class="intro-img"
-              src="public/images/swordstyle.png"
+              src="public/images/fightstyle.jpg"
               alt="Sword Style"
             />
-            <h1>Style</h1>
-          </div>
-        </div>
+            <h1 class="subtittle">Style</h1>
 
-        <div class="welcome-banner2">
-          <div class="akuma-no-mi-intro">
+            <p class="home-text">
+              What is your style? Go ahead and choose the style that will make
+              you the best
+            </p>
+          </section>
+          <section class="welcome-banner5">
+            <img
+              class="intro-img"
+              src="public/images/logo.jpg"
+              alt="Create a character"
+            />
+
+            <h1 class="subtittle">Create a Character</h1>
+            <p class="home-text">
+              Build your own character in the One Piece Universe! Will you be
+              the next to conquer these seas?! Are you level King of Pirates?
+              Who are your enemies? How strong are you? Well, discover now!
+            </p>
+            <button>Create</button>
+          </section>
+          <section class="welcome-banner2">
             <img
               class="intro-img"
               src="public/images/akumanomi.jpg"
               alt="Bara Bara no Mi"
             />
-            <h1>Akuma no Mi</h1>
-          </div>
-          <p>
-            Conquer the world with or without a Devil Fruit, it doesn't matter.
-            But the fact is that whoever owns a fruit has the power of gods or
-            demons, well, it's up to you.
-          </p>
-        </div>
-        <div class="welcome-banner3">
-          <p>
-            Only those with strong ambition and determination are able to
-            possess it, the power to change the course of history, the power
-            that surpasses the gods.
-          </p>
-          <div class="haki-intro">
+            <h1 class="subtittle">Akuma no Mi</h1>
+
+            <p class="home-text">
+              Conquer the world with or without a Devil Fruit, it doesn't
+              matter. But the fact is that whoever owns a fruit has the power of
+              gods or demons, well, it's up to you.
+            </p>
+          </section>
+
+          <section class="welcome-banner3">
             <img
               class="intro-img"
               src="public/images/haki.jpg"
               alt="King's Haki/Conqueror's Haki"
             />
-            <h1>Haki</h1>
-          </div>
-        </div>
-        <div class="welcome-banner4">
-          <div class="level-intro">
+            <h1 class="subtittle">Haki</h1>
+
+            <p class="home-text">
+              Only those with strong ambition and determination are able to
+              possess it, the power to change the course of history, the power
+              that surpasses the gods.
+            </p>
+          </section>
+          <section class="welcome-banner4">
             <img
               class="intro-img"
               src="public/images/kingofpirates.jpg"
               alt="King of Pirates"
             />
-            <h1>Level</h1>
-          </div>
-          <p>
-            What is your level? How strong are you? Discover creating your
-            character, your level depends on you.
-          </p>
-        </div>
-        <div class="welcome-banner5">
-          <p>
-            What do you want to conquer? Who are your enemies? How strong are
-            you? Are you level King of Pirates? Well, discover now!
-          </p>
-          <button>Create</button>
-          <div class="create-intro">
-            <img
-              class="intro-img"
-              src="public/images/charactrbuild.jpg"
-              alt="Create a character"
-            />
-            <h1>Start</h1>
-          </div>
+            <h1 class="subtittle">Level</h1>
+
+            <p class="home-text">
+              What is your level? How strong are you? Discover creating your
+              character, your level depends on you.
+            </p>
+          </section>
         </div>
       </div>
     </main>
-    <footer></footer>
-    <script src="js/home.js" defer></script>
+    <footer>
+      <ul class="sci">
+        <li>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/hugoleonardo.lopesalmeida"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/hugolalmeida"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/hugo-leonardo-lopes-almeida-023701221/"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/hugollalmeida/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
