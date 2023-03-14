@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Kalam&family=Rampart+One&family=Rubik+Wet+Paint&display=swap");
 
-
 body {
   margin: 0px;
 }
@@ -19,6 +18,7 @@ header {
   box-shadow: 5px 5px 10px #333;
   width: 100%;
   height: 60px;
+  z-index: 1;
 }
 
 .logo {
@@ -126,12 +126,12 @@ header {
 
 /* INTRO HOME SECTION */
 #card {
+  margin-top: 40px;
   grid-column: 1/11;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 .intro-img {
   width: 400px;
@@ -143,48 +143,145 @@ header {
 }
 
 /* banners */
-.welcome-banner,
-.welcome-banner1,
-.welcome-banner2,
-.welcome-banner3,
-.welcome-banner4,
-.welcome-banner5 {
-  border: 2px solid brown;
+.card-side {
+  perspective: 130rem;
+  text-align: center;
+  width: 400px;
+  height: 620px;
   margin: 20px;
+}
+.card-side1 {
+  perspective: 130rem;
+  text-align: center;
+  width: 400px;
+  height: 620px;
+  margin: 20px;
+}
+.welcome-banner1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.5s;
   border-radius: 20px;
   text-align: center;
-  background-color: antiquewhite;
   width: 400px;
-  height: 600px;
+  height: 620px;
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  /* background-image: url("../public/images/gold-gradient-background.png"); */
+}
+.welcome-banner1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.35);
+}
+.welcome-banner {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 20px;
+  text-align: center;
+  width: 400px;
+  height: 620px;
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  /* background-image: url("../public/images/gold-gradient-background.png"); */
+  transition: all 0.8s ease;
+  backface-visibility: hidden;
+}
+.welcome-banner.back {
+  transform: rotateY(-180deg);
+  background-color: #4158d0;
+  /* background-image: url("../public/images/gold-gradient-background.png"); */
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
 }
 
-/* .welcome-banner1 {
-  grid-column: 1/4;
-  grid-row: 3/4;
-}
-.welcome-banner2 {
-  grid-column: 8/11;
-  grid-row: 3/4;
-}
-.welcome-banner3 {
-  grid-column: 3/6;
-  grid-row: 6/7;
-}
-.welcome-banner4 {
-  grid-column: 6/9;
-  grid-row: 6/7;
+.welcome-banner.front {
+  background-color: antiquewhite;
 }
 
-.welcome-banner5 {
-  grid-column: 4/8;
-  grid-row: 3/4;
-} */
+.card-side:hover .welcome-banner.front {
+  transform: rotateY(180deg);
+}
+
+.card-side:hover .welcome-banner.back {
+  transform: rotateY(0deg);
+}
+/* BUTTON CREATE */
+.button-55 {
+  align-self: center;
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "indie flower";
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 20px;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
 
 /* sections into banners */
 .subtittle {
   font-family: "kalam";
   text-align: center;
-  text-shadow: 5px 5px 10px #333;
+  /* text-shadow: 5px 5px 10px #333; */
 }
 .home-text {
   font-family: "indie flower";
@@ -192,16 +289,64 @@ header {
   font-size: 1.3em;
   margin: 10px;
 }
+.card-text {
+  font-family: "indie flower";
+  text-align: center;
+  font-size: 1.3em;
+  margin: 20px;
+  margin-top: 20px;
+  align-self: center;
+}
+/* READ MORE */
+.read-more {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: "indie flower";
+  background-image: linear-gradient(to right, white, white 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.read-more:before {
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  background-position: 0;
+}
+
+.read-more:hover::before {
+  width: 100%;
+}
 
 /* FOOTER */
 footer {
   background-color: black;
-  padding-bottom: 2px;
+  padding: 0.5px;
+  display: flex;
+  justify-content: center;
+}
+#footer-text {
+  color: white;
+  text-align: left;
+  align-self: center;
 }
 .sci {
   position: relative;
   display: flex;
-  justify-content: right;
 }
 
 .sci li {
@@ -215,12 +360,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 10px;
+  border: 1px solid white;
   background: transparent;
   font-size: 1.5em;
   color: white;
   text-decoration: none;
-  box-shadow: 0 3px 6px #757373, 0 3px 6px #757373;
+
   transition: 0.5s;
 }
 
