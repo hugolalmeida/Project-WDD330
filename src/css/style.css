@@ -374,3 +374,36 @@ footer {
   background: white;
   color: black;
 }
+
+/* FIGHTING STYLE PAGE */
+.fight-img {
+  width: 440px;
+  height: 312px;
+  border-radius: 20px;
+  margin: 20px;
+}
+#fighting-styles {
+  grid-column: 2/10;
+  margin: 20px;
+  margin-top: 6%;
+}
+.fighting-section,
+.fighting-section1,
+.fighting-section2 {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 420px;
+}
+.fighting-section {
+  background-color: red;
+}
+.fighting-section1 {
+  flex-direction: row-reverse;
+  background-color: green;
+}
+.fighting-section2 {
+  background-color: yellow;
+}
