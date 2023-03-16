@@ -10,7 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         fightingstyle: resolve(__dirname, "src/fightstyle-section/index.html"),
-        // product: resolve(__dirname, "src/product_pages/index.html"),
+        haki: resolve(__dirname, "src/haki-section/index.html"),
         // productlisting: resolve(__dirname, "src/product-listing/index.html"),
         // checkout: resolve(__dirname, "src/checkout/index.html"),
         // checkedout: resolve(__dirname, "src/checkout/success.html"),
