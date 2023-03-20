@@ -1,7 +1,70 @@
 {
-    "level":[
+  "level": [
+    {
+      "charlos": [
         {
-        "charlos": "An insignificant Celestial Dragon, a random."
+          "name": "",
+          "description": "An insignificant Celestial Dragon, a random.",
+          "image": "../images/level/charlos.png"
+        }
+      ],
+
+      "crew": [
+        {
+          "name": "",
+          "description": "A member of a crew, you do your function but doesn't make difference and you could be substituted.",
+          "image": "../images/level/crew.jpg"
+        }
+      ],
+      "supernova": [
+        {
+          "name": "",
+          "description": "The Supernova are infamous people who has the power to confront the world, but they are still at beginning of the journey and has the determination to arrive to the top. They are notorious for the bold actions they committed against the World Government and have bounties of over 100,000,000 berries.",
+          "image": "../images/level/supernova.jpg"
+        }
+      ],
+      "viceadmirial": [
+        {
+          "name": "",
+          "description": "Vice Admiral is the third highest rank in the Marines. These officers can have varying duties and amounts of authority. Vice admirals are well known for their strength, and it would seem that most of them are swordsmen, and several have been shown using Rokushiki.",
+          "image": "../images/level/viceadmirial.png"
+        }
+      ],
+      "commander": [
+        {
+          "name": "",
+          "description": "A commander of a sea emperor is one of the most powerful characters in a crew. They have the power to rival great figures of the sea such as Shicibukai. They are reliable companions that you can trust your rear.",
+          "image": "../images/level/commander.png"
+        }
+      ],
+      "shicibukai": [
+        {
+          "name": "",
+          "description": "The 'Seven Sea Lords of Royalty' were an alliance of seven pirates who became privateers in the service of the World Government. Although they worked for the World Government, the Shichibukai themselves typically didn't care to respect the Government. As a group, they were one of the Three Great Powers that maintained the balance of the world.",
+          "image": "../images/level/shichibukai.jpg"
+        }
+      ],
+      "admiral": [
+        {
+          "name": "",
+          "description": "The admirals are crowned the World Government's 'Greatest Military Powers', being considered not only the strongest active Marine officers (aside from the fleet admiral) but the strongest individual fighters within the entire governmental structure.",
+          "image": "../images/level/admiral.png"
+        }
+      ],
+      "yonkou": [
+        {
+          "name": "",
+          "description": "The Emperors are one of the Three Great Powers of the world. Their strength and influence are such that they literally live as if they were emperors, doing most of the time as they please. Individually, they are considered the most powerful pirates in the world, with devastatingly powerful and versatile Devil Fruit abilities , immense physical strength, stamina and durability, and/or sheer mastery of Haki.",
+          "image": "../images/level/yonkou.png"
+        }
+      ],
+      "king": [
+        {
+          "name": "",
+          "description": "A legendary pirate who reached the top of the world, who conquered the entire sea, the one who stands at the top of the yonkous and the world. It is they who became known as the King of Pirates.",
+          "image": "../images/level/king.jpg"
+        }
+      ]
     }
-    ]
+  ]
 }
