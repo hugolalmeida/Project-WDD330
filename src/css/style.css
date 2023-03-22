@@ -125,7 +125,7 @@ header {
 }
 
 /* INTRO HOME SECTION */
-#card {
+.card {
   margin-top: 40px;
   grid-column: 1/11;
   display: flex;
@@ -383,6 +383,14 @@ footer {
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.fight-img1 {
+  width: 440px;
+  height: 312px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+}
 #fighting-styles {
   grid-column: 2/10;
   margin: 20px;
@@ -460,7 +468,7 @@ hr {
   display: flex;
   align-items: center;
   border-radius: 20px;
-
+  flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: linear-gradient(
     to right,
