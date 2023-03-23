@@ -3,7 +3,7 @@ import { loadHeaderFooter } from "./util.mjs";
 loadHeaderFooter().then();
 
 const path = "../json/level.json";
-const cardSection = document.querySelector(".card");
+const cardSection = document.querySelector(".card1");
 
 fetch(path)
   .then(function (response) {
@@ -19,14 +19,15 @@ function levelCardTemplate(item) {
   let div = document.createElement("div");
   div.setAttribute("class", "level-section");
   let div1 = document.createElement("div");
-  div1.setAttribute("class", "card-side1");
+  div1.setAttribute("class", "card-side2");
   let section = document.createElement("section");
-  section.setAttribute("class", "welcome-banner1");
+  section.setAttribute("class", "level-banner");
   let img = document.createElement("img");
   img.setAttribute("src", item.image);
   img.setAttribute("class", "intro-img");
   img.setAttribute("alt", item.name);
   let hr = document.createElement("hr");
+  let hr1 = document.createElement("hr");
   let h1 = document.createElement("h1");
   h1.setAttribute("class", "subtittle");
   let p = document.createElement("p");
@@ -37,9 +38,10 @@ function levelCardTemplate(item) {
 
   div.appendChild(div1);
   div1.appendChild(section);
-  section.appendChild(hr);
   section.appendChild(img);
+  section.appendChild(hr);
   section.appendChild(h1);
+  section.appendChild(hr1);
   section.appendChild(p);
 
   cardSection.appendChild(div);
