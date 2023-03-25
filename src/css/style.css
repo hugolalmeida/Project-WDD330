@@ -10,6 +10,7 @@ header {
 }
 .topnav {
   position: fixed;
+  top: 0;
   display: flex;
   overflow: hidden;
   align-items: center;
@@ -125,7 +126,7 @@ header {
 }
 
 /* INTRO HOME SECTION */
-.card {
+.card-intro {
   margin-top: 40px;
   grid-column: 1/11;
   display: flex;
@@ -542,12 +543,68 @@ hr {
 }
 
 /* AKUMA NO MI PAGE */
-.card2 {
+.home-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6%;
+  grid-column: 2/10;
+}
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #b38728;
+  margin: 20px;
+}
+.slide-content {
+  margin: 0 90px;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: #265df2;
+}
+
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: #265df2;
+}
+
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+.swiper-button-next {
+  right: 20px;
+}
+.swiper-button-prev {
+  left: 20px;
+}
+/* AKUMA NO MI CARDS */
+
+.card {
   position: relative;
   cursor: pointer;
 }
 
-.card2 .face {
+.card .face {
   width: 300px;
   height: 200px;
   transition: 0.5s;
@@ -555,7 +612,7 @@ hr {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card2 .face.face1 {
+.card .face.face1 {
   position: relative;
   background: linear-gradient(
     to right,
@@ -568,15 +625,14 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   transform: translateY(100px);
 }
 
-.card2:hover .face.face1 {
+.card:hover .face.face1 {
   transform: translateY(0);
 }
 
-.card2 .face.face1 .content {
+.card .face.face1 .content {
   opacity: 1;
   transition: 0.5s;
 }
@@ -585,7 +641,7 @@ hr {
   opacity: 1;
 } */
 
-.card2 .face.face1 .content img {
+.card .face.face1 .content img {
   width: 200px;
   height: 150px;
   margin-top: 15px;
@@ -593,15 +649,16 @@ hr {
   border-radius: 5px 25px 5px 50px;
 }
 
-.card2 .face.face1 .content h3 {
+.card .face.face1 .content h3 {
   margin-bottom: 10px;
   padding: 0;
   color: black;
   text-align: center;
   font-size: 1.5em;
+  margin-top: 0px;
 }
 
-.card2 .face.face2 {
+.card .face.face2 {
   position: relative;
   background: #fff;
   display: flex;
@@ -614,16 +671,17 @@ hr {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 1s linear;
+  z-index: -1;
 }
 
-.card2:hover .face.face2 {
+.card:hover .face.face2 {
   transform: translateY(-10px);
   height: auto;
   visibility: visible;
   opacity: 1;
 }
 
-.card2 .face.face2 .content p {
+.card .face.face2 .content p {
   margin: 0;
   padding: 0;
 }
