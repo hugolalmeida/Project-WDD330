@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Kalam&family=Rampart+One&family=Rubik+Wet+Paint&display=swap");
 
+
 body {
   margin: 0px;
 }
@@ -555,14 +556,26 @@ hr {
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
-  background-color: #b38728;
+  background-image: radial-gradient(
+    circle farthest-corner at center,
+    rgba(15, 82, 186, 1) 10%,
+    rgba(0, 60, 159, 1) 20%,
+    rgba(0, 39, 132, 1) 35%,
+    rgba(0, 21, 106, 1) 45%,
+    rgba(0, 3, 81, 1) 55%,
+    rgba(0, 5, 57, 1) 65%,
+    rgba(0, 2, 34, 1) 80%,
+    rgba(0, 0, 9, 1) 90%,
+    rgba(0, 0, 0, 1) 100%
+  );
   margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
 }
 .slide-content {
   margin: 0 90px;
   overflow: hidden;
   border-radius: 25px;
-  background-color: #265df2;
 }
 
 .button {
@@ -647,6 +660,7 @@ hr {
   margin-top: 15px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 5px 25px 5px 50px;
+  background-color: white;
 }
 
 .card .face.face1 .content h3 {
@@ -686,6 +700,210 @@ hr {
   padding: 0;
 }
 
+.subtittle1 {
+  font-family: "kalam";
+  text-align: center;
+  color: white;
+  /* text-shadow: 5px 5px 10px #333; */
+}
+/* 
+CREATE PAGE */
+
+.create-background {
+  width: 100%;
+  background-image: radial-gradient(
+    circle farthest-corner at center,
+    rgba(15, 82, 186, 1) 10%,
+    rgba(0, 60, 159, 1) 20%,
+    rgba(0, 39, 132, 1) 35%,
+    rgba(0, 21, 106, 1) 45%,
+    rgba(0, 3, 81, 1) 55%,
+    rgba(0, 5, 57, 1) 65%,
+    rgba(0, 2, 34, 1) 80%,
+    rgba(0, 0, 9, 1) 90%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  margin-top: 3%;
+  grid-column: 1/11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.berrie {
+  color: white;
+  font-size: 1.5em;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background:#000000;background-color: #000000; background: linear-gradient(
+    to right,
+    #bf953f 15%,
+    #fcf6ba 35%,
+    #b38728 55%,
+    #fbf5b7 90%,
+    #aa771c 100%
+  );background-size: 100%;background-repeat: repeat;-webkit-background-clip: text;-webkit-text-fill-color: transparent;
+  margin: 50px;
+}
+.build-section{
+  width: 1000px;
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 400px;
+  margin-bottom: 50px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+/* MALE BUTTON */
+#male{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  /* height: 48px; */
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  /* padding-left: 16px;
+  padding-right: 16px; */
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+
+}
+#male label{
+  width:100px;
+}
+
+#male:focus{
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+#male:hover{
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#male:active{
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#male label span{
+  text-align: center;
+  display: block;
+  padding: 16px;
+}
+#male label input{
+  position:absolute;
+  top:-20px;
+}
+#male label input:checked + span{
+  background-image: radial-gradient(
+    circle farthest-corner at center,
+    rgba(15, 82, 186, 1) 10%,
+    rgba(0, 60, 159, 1) 20%,
+    rgba(0, 39, 132, 1) 35%,
+    rgba(0, 21, 106, 1) 45%,
+    rgba(0, 3, 81, 1) 55%,
+    rgba(0, 5, 57, 1) 65%,
+    rgba(0, 2, 34, 1) 80%,
+    rgba(0, 0, 9, 1) 90%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: inset 0px 5px 10px rgba(255,255,255,0.4);
+}
+/* FEMALE BUTTON */
+#female{
+  align-items: center;
+  appearance: none;
+  background-color: #f5f5f1;
+background-image: linear-gradient(315deg, #f5f5f1 0%, #e50914 74%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  /* height: 48px; */
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  /* padding-left: 16px;
+  padding-right: 16px; */
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+
+}
+#female label{
+  width:100px;
+}
+
+#female:focus{
+  box-shadow: #f10712e9 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f10712e9 0 -3px 0 inset;
+}
+
+#female:hover{
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #f10712e9 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#female:active{
+  box-shadow: #f10712e9 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#female label span{
+  text-align: center;
+  display: block;
+  padding: 16px;
+}
+#female label input{
+  position:absolute;
+  top:-20px;
+}
+#female label input:checked + span{
+  background-color: #990000;
+background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+  box-shadow: inset 0px 5px 10px rgba(255,255,255,0.4);
+}
 @media screen and (max-width: 769px) {
   .slide-content {
     margin: 0 71px;

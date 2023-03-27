@@ -37,3 +37,20 @@ export async function loadHeaderFooter() {
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
 }
+
+// save data to local storage
+export function setLocalStorage(key, data) {
+  const storageData = {
+    data: data
+  };
+  localStorage.setItem(key, JSON.stringify(storageData));
+}
+
+// retrieve data from localstorage
+export function getLocalStorage(key) {
+  const storageData = JSON.parse(localStorage.getItem(key));
+  if (storageData === null) {
+    return null;
+  }
+  return storageData.data;
+}
