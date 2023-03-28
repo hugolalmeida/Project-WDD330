@@ -1,0 +1,60 @@
+{
+    "race":[
+        {
+            "name":"Human",
+            "image":"https://i.pinimg.com/originals/b3/27/55/b32755e221d14b3222c1d111ae50b7ed.png",
+            "desciption":"",
+            "price":0
+
+    },
+    {
+        "name":"Shandorian",
+        "image":"https://i.pinimg.com/originals/99/00/f0/9900f0f979306b1eacf05477ffa1ac01.png",
+        "desciption":"",
+        "price":0
+},
+{
+    "name":"Tontatta",
+    "image":"https://i.pinimg.com/originals/a5/ff/9a/a5ff9a3bef18a069710d69f853390707.png",
+    "desciption":"",
+    "price":0
+},
+{
+    "name":"Longlegs",
+    "image":"https://i.pinimg.com/originals/ba/f1/8a/baf18add65d15ea6df8cd6a8d853410c.png",
+    "desciption":"",
+    "price":0
+},
+{
+    "name":"Giant",
+    "image":"https://i.pinimg.com/originals/3b/50/3d/3b503db37c8b24970d13ce928add4f2b.jpg",
+    "desciption":"",
+    "price":0
+},
+{
+    "name":"Mink",
+    "image":"https://i.pinimg.com/originals/68/60/51/686051d83732a2071552f63d34ce965d.png",
+    "desciption":"",
+    "price":0
+},
+{
+    "name":"Long Arms",
+    "image":"https://i.pinimg.com/originals/aa/77/08/aa7708c0bbcd2db43628546dc4ffc037.png",
+    "desciption":"",
+    "price":0
+},
+{
+    "name":"Fishmen",
+    "image":"https://i.pinimg.com/originals/fd/b8/bc/fdb8bc209e1db209d83d466cd824c957.png",
+    "desciption":"",
+    "price":0
+},
+{
+    "name":"Fishmen",
+    "image":"https://i.pinimg.com/originals/fd/b8/bc/fdb8bc209e1db209d83d466cd824c957.png",
+    "desciption":"",
+    "price":0
+}
+    
+]
+}
