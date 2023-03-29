@@ -4,7 +4,7 @@
             "name":"Human",
             "image":"https://i.pinimg.com/originals/b3/27/55/b32755e221d14b3222c1d111ae50b7ed.png",
             "desciption":"",
-            "price":0
+            "price": 1000000
 
     },
     {
@@ -40,12 +40,6 @@
 {
     "name":"Long Arms",
     "image":"https://i.pinimg.com/originals/aa/77/08/aa7708c0bbcd2db43628546dc4ffc037.png",
-    "desciption":"",
-    "price":0
-},
-{
-    "name":"Fishmen",
-    "image":"https://i.pinimg.com/originals/fd/b8/bc/fdb8bc209e1db209d83d466cd824c957.png",
     "desciption":"",
     "price":0
 },

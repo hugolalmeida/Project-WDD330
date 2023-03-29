@@ -349,6 +349,10 @@ footer {
   padding: 0.5px;
   display: flex;
   justify-content: center;
+  
+}
+#main-footer{
+  z-index: 1;
 }
 #footer-text {
   color: white;
@@ -675,10 +679,19 @@ CREATE PAGE */
   justify-items: center;
   align-items: center;
   justify-self: center;
-  height: 615px;
+  height: 96%;
 }
 .berry-icon{
   width: 16px;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  
+}
+.price span{
+  align-self: center;
+  font-size: 1.5em;
 }
 .berrie {
   color: white;
@@ -751,23 +764,25 @@ CREATE PAGE */
 }
 
 /* GENDER SECTION */
+.build-section.genders{
+  display: none;
+}
 .build-section {
+  
   width: 500px;
   background: var(--colorGold);
-  
-  height: 400px;
-  margin-bottom: 50px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-}
-#form{
   align-content: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: "kalam";
+  height: 400px;
+  margin-bottom: 50px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
 }
+ 
 #name{
   text-align: center;
   margin-top: 40px;
@@ -1006,15 +1021,29 @@ CREATE PAGE */
 }
 
 /* RACE SECTION */
-.race-card{
+.race-section{
   background: var(--colorGold);
   width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+  display: none;
 }
+.race-section h2{
+  padding-top: 20px;
+}
+.race-card{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
 .race-card label img{
   width: 200px;
 }
 
 /* CHECK IMG */
+
 ul {
   list-style-type: none;
 }
@@ -1023,19 +1052,22 @@ li {
   display: inline-block;
 }
 
-input[type="checkbox"][id^="myCheckbox"] {
+input[type="radio"][id^="myCheckbox"] {
   display: none;
 }
 
-label {
+.check-img {
   padding: 10px;
   display: block;
   position: relative;
   margin: 10px;
   cursor: pointer;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "kalam";
 }
 
-label:before {
+.check-img:before {
   background-color: white;
   color: white;
   content: " ";
@@ -1043,37 +1075,38 @@ label:before {
   border-radius: 50%;
   border: 1px solid grey;
   position: absolute;
-  top: -5px;
-  left: -5px;
+  top: 25px;
+  left: 5px;
   width: 25px;
   height: 25px;
   text-align: center;
   line-height: 28px;
   transition-duration: 0.4s;
   transform: scale(0);
+  z-index: 1;
 }
 
-label img {
-  height: 100px;
-  width: 100px;
+.check-img img {
+  height: 150px;
+  width: 400px;
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
 }
 
-:checked + label {
+:checked + .check-img {
   border-color: #ddd;
 }
 
-:checked + label:before {
+:checked + .check-img:before {
   content: "✓";
   background-color: grey;
   transform: scale(1);
 }
 
-:checked + label img {
+:checked + .check-img img {
   transform: scale(0.9);
   /* box-shadow: 0 0 5px #333; */
-  z-index: -1;
+  
 }
 
 
