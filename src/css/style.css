@@ -349,9 +349,11 @@ footer {
   padding: 0.5px;
   display: flex;
   justify-content: center;
-  
+  z-index: 1;
+  width: 100%;
+  margin: 0px;
 }
-#main-footer{
+#main-footer {
   z-index: 1;
 }
 #footer-text {
@@ -679,17 +681,16 @@ CREATE PAGE */
   justify-items: center;
   align-items: center;
   justify-self: center;
-  height: 96%;
+  height: 100%;
 }
-.berry-icon{
+.berry-icon {
   width: 16px;
 }
 .price {
   display: flex;
   justify-content: center;
-  
 }
-.price span{
+.price span {
   align-self: center;
   font-size: 1.5em;
 }
@@ -710,7 +711,6 @@ CREATE PAGE */
   text-align: center;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
 }
-
 
 .start {
   align-items: center;
@@ -764,11 +764,10 @@ CREATE PAGE */
 }
 
 /* GENDER SECTION */
-.build-section.genders{
+.build-section.genders {
   display: none;
 }
 .build-section {
-  
   width: 500px;
   background: var(--colorGold);
   align-content: center;
@@ -782,13 +781,13 @@ CREATE PAGE */
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   border-radius: 20px;
 }
- 
-#name{
+
+#name {
   text-align: center;
   margin-top: 40px;
   font-size: 1.5em;
 }
-#name input{
+#name input {
   text-align: center;
   background: transparent;
 }
@@ -937,13 +936,8 @@ CREATE PAGE */
 
 /* PREVIEW-NEXT BUTTONS */
 
-.buttons{
-  display: flex;
-  flex-direction: row-reverse;
-}
-.next button{
-  margin-top: 70px;
-  margin-left: 300px;
+.next {
+  margin-top: 20px;
   align-self: center;
   background: var(--colorGold);
   background-image: none;
@@ -973,16 +967,21 @@ CREATE PAGE */
   touch-action: manipulation;
 }
 
-.next button:hover {
+.next:hover,
+.next1:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
-.next button:focus {
+.next:focus,
+.next1:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
-.preview button{
-  margin-top: 70px;
+.next1,
+.next2,
+.next3,
+.next4 {
+  margin-bottom: 20px;
   align-self: center;
   background: var(--colorGold);
   background-image: none;
@@ -1011,17 +1010,29 @@ CREATE PAGE */
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.preview button:hover {
+.next3 {
+  margin-left: 500px;
+}
+.next2:hover,
+.next3:hover,
+.next4:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
-.preview button:focus {
+.next2:focus,
+.next3:focus,
+.next4:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
 /* RACE SECTION */
-.race-section{
+.race-section,
+.profession-section,
+.style-section,
+.paramecia-section,
+.logia-section,
+.zoam-section {
   background: var(--colorGold);
   width: 1000px;
   border-radius: 20px;
@@ -1029,16 +1040,33 @@ CREATE PAGE */
   margin-bottom: 40px;
   display: none;
 }
-.race-section h2{
+.build-tittle {
   padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
-.race-card{
+.race-card,
+.profession-card,
+.style-card,
+.paramecia-card,
+.logia-card,
+.zoam-card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   justify-items: center;
 }
 
-.race-card label img{
+.race-card label img {
+  width: 200px;
+}
+.profession-card label img {
+  width: 200px;
+}
+.style-card label img,
+.paramecia-card label img,
+.logia-card label img,
+.zoam-card label img {
   width: 200px;
 }
 
@@ -1053,6 +1081,15 @@ li {
 }
 
 input[type="radio"][id^="myCheckbox"] {
+  display: none;
+}
+input[type="checkbox"][id^="myCheckboxx"] {
+  display: none;
+}
+input[type="radio"][id^="myCheckboxxx"] {
+  display: none;
+}
+input[type="radio"][id^="myCheckboxf"] {
   display: none;
 }
 
@@ -1075,7 +1112,7 @@ input[type="radio"][id^="myCheckbox"] {
   border-radius: 50%;
   border: 1px solid grey;
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 5px;
   width: 25px;
   height: 25px;
@@ -1106,9 +1143,7 @@ input[type="radio"][id^="myCheckbox"] {
 :checked + .check-img img {
   transform: scale(0.9);
   /* box-shadow: 0 0 5px #333; */
-  
 }
-
 
 @media screen and (max-width: 769px) {
   .slide-content {

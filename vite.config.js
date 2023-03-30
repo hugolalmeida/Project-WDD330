@@ -13,7 +13,7 @@ export default defineConfig({
         haki: resolve(__dirname, "src/haki-section/index.html"),
         level: resolve(__dirname, "src/level-section/index.html"),
         akumanomi: resolve(__dirname, "src/akuma-section/index.html"),
-        // checkedout: resolve(__dirname, "src/checkout/success.html"),
+        buildchar: resolve(__dirname, "src/buildchar/index.html"),
         // admin: resolve(__dirname, "src/admin/index.html"),
       },
     },

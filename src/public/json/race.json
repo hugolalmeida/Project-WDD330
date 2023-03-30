@@ -1,54 +1,161 @@
 {
-    "race":[
-        {
-            "name":"Human",
-            "image":"https://i.pinimg.com/originals/b3/27/55/b32755e221d14b3222c1d111ae50b7ed.png",
-            "desciption":"",
-            "price": 1000000
-
+  "race": [
+    {
+      "name": "Human",
+      "image": "https://i.pinimg.com/originals/b3/27/55/b32755e221d14b3222c1d111ae50b7ed.png",
+      "desciption": "",
+      "price": 1000
     },
     {
-        "name":"Shandorian",
-        "image":"https://i.pinimg.com/originals/99/00/f0/9900f0f979306b1eacf05477ffa1ac01.png",
-        "desciption":"",
-        "price":0
-},
-{
-    "name":"Tontatta",
-    "image":"https://i.pinimg.com/originals/a5/ff/9a/a5ff9a3bef18a069710d69f853390707.png",
-    "desciption":"",
-    "price":0
-},
-{
-    "name":"Longlegs",
-    "image":"https://i.pinimg.com/originals/ba/f1/8a/baf18add65d15ea6df8cd6a8d853410c.png",
-    "desciption":"",
-    "price":0
-},
-{
-    "name":"Giant",
-    "image":"https://i.pinimg.com/originals/3b/50/3d/3b503db37c8b24970d13ce928add4f2b.jpg",
-    "desciption":"",
-    "price":0
-},
-{
-    "name":"Mink",
-    "image":"https://i.pinimg.com/originals/68/60/51/686051d83732a2071552f63d34ce965d.png",
-    "desciption":"",
-    "price":0
-},
-{
-    "name":"Long Arms",
-    "image":"https://i.pinimg.com/originals/aa/77/08/aa7708c0bbcd2db43628546dc4ffc037.png",
-    "desciption":"",
-    "price":0
-},
-{
-    "name":"Fishmen",
-    "image":"https://i.pinimg.com/originals/fd/b8/bc/fdb8bc209e1db209d83d466cd824c957.png",
-    "desciption":"",
-    "price":0
-}
-    
-]
+      "name": "Shandorian",
+      "image": "https://i.pinimg.com/originals/99/00/f0/9900f0f979306b1eacf05477ffa1ac01.png",
+      "desciption": "",
+      "price": 1000
+    },
+    {
+      "name": "Tontatta",
+      "image": "https://i.pinimg.com/originals/a5/ff/9a/a5ff9a3bef18a069710d69f853390707.png",
+      "desciption": "",
+      "price": 1000
+    },
+    {
+      "name": "Longlegs",
+      "image": "https://i.pinimg.com/originals/ba/f1/8a/baf18add65d15ea6df8cd6a8d853410c.png",
+      "desciption": "",
+      "price": 2000
+    },
+    {
+      "name": "Giant",
+      "image": "https://i.pinimg.com/originals/3b/50/3d/3b503db37c8b24970d13ce928add4f2b.jpg",
+      "desciption": "",
+      "price": 5000
+    },
+    {
+      "name": "Mink",
+      "image": "https://i.pinimg.com/originals/68/60/51/686051d83732a2071552f63d34ce965d.png",
+      "desciption": "",
+      "price": 5000
+    },
+    {
+      "name": "Long Arms",
+      "image": "https://i.pinimg.com/originals/aa/77/08/aa7708c0bbcd2db43628546dc4ffc037.png",
+      "desciption": "",
+      "price": 2000
+    },
+    {
+      "name": "Fishmen",
+      "image": "https://i.pinimg.com/originals/fd/b8/bc/fdb8bc209e1db209d83d466cd824c957.png",
+      "desciption": "",
+      "price": 3000
+    }
+  ],
+  "profession": [
+    {
+      "name": "Apprentice",
+      "image": "../images/profession/Apprentice.png",
+      "price": 2000,
+      "power": 200
+    },
+    {
+      "name": "Archeologist",
+      "image": "../images/profession/archaeologist.png",
+      "price": 2000,
+      "power": 200
+    },
+    {
+      "name": "Captain",
+      "image": "../images/profession/captain.jpg",
+      "price": 10000,
+      "power": 1000
+    },
+    {
+      "name": "Carpenter",
+      "image": "../images/profession/carpenter.jpg",
+      "price": 4000,
+      "power": 400
+    },
+    {
+      "name": "Chef",
+      "image": "../images/profession/chef.png",
+      "price": 4000,
+      "power": 200
+    },
+    {
+      "name": "Dancer",
+      "image": "../images/profession/dancer.jpg",
+      "price": 2000,
+      "power": 200
+    },
+    {
+      "name": "Doctor",
+      "image": "../images/profession/doctor.png",
+      "price": 5000,
+      "power": 500
+    },
+    {
+      "name": "Extra",
+      "image": "../images/profession/extra.png",
+      "price": 0,
+      "power": 50
+    },
+    {
+      "name": "Fighter",
+      "image": "../images/profession/fighter.png",
+      "price": 6000,
+      "power": 600
+    },
+    {
+      "name": "Immediate",
+      "image": "../images/profession/immediate.png",
+      "price": 8000,
+      "power": 800
+    },
+    {
+      "name": "Musician",
+      "image": "../images/profession/musician.png",
+      "price": 4000,
+      "power": 400
+    },
+    {
+      "name": "Navigator",
+      "image": "../images/profession/navigator.jpg",
+      "price": 4000,
+      "power": 400
+    },
+    {
+      "name": "Scientist",
+      "image": "../images/profession/scientist.jpg",
+      "price": 2000,
+      "power": 200
+    },
+    {
+      "name": "Stylist",
+      "image": "../images/profession/stylist.png",
+      "price": 2000,
+      "power": 200
+    }
+  ],
+  "style": [
+    {
+      "name": "Unarmed",
+      "description": "",
+      "image": "../images/fight_style/noweapon.png",
+      "price": 2000,
+      "power": 200
+    },
+    {
+      "name": "Ranged",
+      "description": "",
+      "image": "../images/fight_style/shooter.png",
+      "price": 2000,
+      "power": 200
+    },
+    {
+      "name": "Armed",
+      "description": "",
+      "image": "../images/fight_style/withweapon.png",
+      "price": 2000,
+      "power": 200
+    }
+  ]
 }
