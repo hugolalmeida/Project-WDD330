@@ -3,50 +3,58 @@
     {
       "name": "Human",
       "image": "https://i.pinimg.com/originals/b3/27/55/b32755e221d14b3222c1d111ae50b7ed.png",
-      "desciption": "",
-      "price": 1000
+      "description": "",
+      "price": 1000,
+      "power": 1000
     },
     {
       "name": "Shandorian",
       "image": "https://i.pinimg.com/originals/99/00/f0/9900f0f979306b1eacf05477ffa1ac01.png",
-      "desciption": "",
-      "price": 1000
+      "description": "",
+      "price": 1000,
+      "power": 1000
     },
     {
       "name": "Tontatta",
       "image": "https://i.pinimg.com/originals/a5/ff/9a/a5ff9a3bef18a069710d69f853390707.png",
-      "desciption": "",
-      "price": 1000
+      "description": "",
+      "price": 1000,
+      "power": 1000
     },
     {
       "name": "Longlegs",
       "image": "https://i.pinimg.com/originals/ba/f1/8a/baf18add65d15ea6df8cd6a8d853410c.png",
-      "desciption": "",
-      "price": 2000
+      "description": "",
+      "price": 2000,
+      "power": 1500
     },
     {
       "name": "Giant",
       "image": "https://i.pinimg.com/originals/3b/50/3d/3b503db37c8b24970d13ce928add4f2b.jpg",
-      "desciption": "",
-      "price": 5000
+      "description": "",
+      "price": 5000,
+      "power": 2000
     },
     {
       "name": "Mink",
       "image": "https://i.pinimg.com/originals/68/60/51/686051d83732a2071552f63d34ce965d.png",
-      "desciption": "",
-      "price": 5000
+      "description": "",
+      "price": 5000,
+      "power": 2000
     },
     {
       "name": "Long Arms",
       "image": "https://i.pinimg.com/originals/aa/77/08/aa7708c0bbcd2db43628546dc4ffc037.png",
-      "desciption": "",
-      "price": 2000
+      "description": "",
+      "price": 2000,
+      "power": 1500
     },
     {
       "name": "Fishmen",
       "image": "https://i.pinimg.com/originals/fd/b8/bc/fdb8bc209e1db209d83d466cd824c957.png",
-      "desciption": "",
-      "price": 3000
+      "description": "",
+      "price": 3000,
+      "power": 1800
     }
   ],
   "profession": [
@@ -59,8 +67,8 @@
     {
       "name": "Archeologist",
       "image": "../images/profession/archaeologist.png",
-      "price": 2000,
-      "power": 200
+      "price": 4000,
+      "power": 400
     },
     {
       "name": "Captain",
@@ -156,6 +164,82 @@
       "image": "../images/fight_style/withweapon.png",
       "price": 2000,
       "power": 200
+    }
+  ],
+  "haki": [
+    {
+      "name": "Kenbunshoku Haki",
+      "description": "",
+      "level": [
+        {
+          "name": "Basic",
+          "description": "",
+          "price": "10000",
+          "power": "500"
+        },
+        {
+          "name": "Intermediate",
+          "description": "",
+          "price": "15000",
+          "power": "1000"
+        },
+        {
+          "name": "Advanced",
+          "description": "",
+          "price": "30000",
+          "power": "3000"
+        }
+      ]
+    },
+    {
+      "name": "Haoshoku Haki",
+      "description": "",
+
+      "level": [
+        {
+          "name": "Basic",
+          "description": "",
+          "price": "15000",
+          "power": "3000"
+        },
+        {
+          "name": "Intermediate",
+          "description": "",
+          "price": "25000",
+          "power": "6000"
+        },
+        {
+          "name": "Advanced",
+          "description": "",
+          "price": "50000",
+          "power": "10000"
+        }
+      ]
+    },
+    {
+      "name": "Busoshoku Haki",
+      "description": "",
+
+      "level": [
+        {
+          "name": "Basic",
+          "description": "",
+          "price": "10000",
+          "power": "500"
+        },
+        {
+          "name": "Intermediate",
+          "description": "",
+          "price": "15000",
+          "power": "1000"
+        },
+        {
+          "name": "Advanced",
+          "description": "",
+          "price": "30000",
+          "power": "3000"
+        }
+      ]
     }
   ]
 }

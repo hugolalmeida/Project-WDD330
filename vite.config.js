@@ -14,7 +14,7 @@ export default defineConfig({
         level: resolve(__dirname, "src/level-section/index.html"),
         akumanomi: resolve(__dirname, "src/akuma-section/index.html"),
         buildchar: resolve(__dirname, "src/buildchar/index.html"),
-        // admin: resolve(__dirname, "src/admin/index.html"),
+        charactersheet: resolve(__dirname, "src/buildchar/charactersheet.html"),
       },
     },
   },

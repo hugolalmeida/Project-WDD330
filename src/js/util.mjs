@@ -39,11 +39,9 @@ export async function loadHeaderFooter() {
 }
 
 // save data to local storage
-export function setLocalStorage(key, data) {
-  const storageData = {
-    data: data
-  };
-  localStorage.setItem(key, JSON.stringify(storageData));
+export function setLocalStorage(key, list) {
+
+  localStorage.setItem(key, list);
 }
 
 // retrieve data from localstorage

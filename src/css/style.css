@@ -352,6 +352,7 @@ footer {
   z-index: 1;
   width: 100%;
   margin: 0px;
+  margin-top: 46px;
 }
 #main-footer {
   z-index: 1;
@@ -669,10 +670,10 @@ hr {
 }
 /* 
 CREATE PAGE */
-
-.create-background {
-  width: 100%;
+.background {
   background-image: var(--saphireBackground);
+}
+.create-background {
   margin-top: 3%;
   grid-column: 1/11;
   display: flex;
@@ -681,7 +682,6 @@ CREATE PAGE */
   justify-items: center;
   align-items: center;
   justify-self: center;
-  height: 100%;
 }
 .berry-icon {
   width: 16px;
@@ -980,7 +980,8 @@ CREATE PAGE */
 .next1,
 .next2,
 .next3,
-.next4 {
+.next4,
+.next5 {
   margin-bottom: 20px;
   align-self: center;
   background: var(--colorGold);
@@ -1010,29 +1011,40 @@ CREATE PAGE */
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.next3 {
+/* .next3 {
   margin-left: 500px;
-}
+} */
 .next2:hover,
 .next3:hover,
-.next4:hover {
+.next4:hover,
+.next5:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
 
 .next2:focus,
 .next3:focus,
-.next4:focus {
+.next4:focus,
+.next5:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
 
 /* RACE SECTION */
-.race-section,
-.profession-section,
-.style-section,
+.akuma-no-mi {
+  display: none;
+  flex-direction: column;
+}
 .paramecia-section,
 .logia-section,
 .zoam-section {
+  background: var(--colorGold);
+  width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+}
+.race-section,
+.profession-section {
   background: var(--colorGold);
   width: 1000px;
   border-radius: 20px;
@@ -1092,6 +1104,49 @@ input[type="radio"][id^="myCheckboxxx"] {
 input[type="radio"][id^="myCheckboxf"] {
   display: none;
 }
+.style-section,
+.haki-div {
+  background: var(--colorGold);
+  width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+  display: none;
+  flex-direction: column;
+}
+.hakis {
+  display: flex;
+  justify-content: center;
+}
+.haki-type {
+  margin: 20px;
+  font-family: "kalam";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: flex-start;
+}
+.label {
+  background-color: transparent;
+  border: 1px solid #666;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.label span {
+  text-align: center;
+  display: block;
+  padding: 16px;
+}
+.label input {
+  display: none;
+}
+.label input:checked + span {
+  background-color: white;
+}
 
 .check-img {
   padding: 10px;
@@ -1143,6 +1198,22 @@ input[type="radio"][id^="myCheckboxf"] {
 :checked + .check-img img {
   transform: scale(0.9);
   /* box-shadow: 0 0 5px #333; */
+}
+
+/* CHARACTER SHEET PAGE */
+.sheet {
+  margin-top: 100px;
+  background-color: white;
+  width: 500px;
+  height: 700px;
+  grid-column: 3/5;
+}
+.char-level {
+  margin-top: 100px;
+  background-color: yellow;
+  width: 500px;
+  height: 700px;
+  grid-column: 5/9;
 }
 
 @media screen and (max-width: 769px) {
