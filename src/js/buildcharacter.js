@@ -1,5 +1,5 @@
 import { loadHeaderFooter } from "./util.mjs";
-import { setLocalStorage, getLocalStorage } from "./util.mjs";
+import { setLocalStorage } from "./util.mjs";
 
 loadHeaderFooter().then();
 
@@ -31,10 +31,12 @@ const logias = document.getElementById("logias");
 const zoamSection = document.querySelector(".zoam-section");
 const zoams = document.getElementById("zoams");
 const hakiSection = document.querySelector(".haki-div");
-const hakis = document.querySelector(".hakis");
-
-const money = document.querySelector(".berries");
-money.textContent = 120000;
+const kenHaki = document.getElementById("ken-haki");
+const haoHaki = document.getElementById("hao-haki");
+const busHaki = document.getElementById("bus-haki");
+const berries = document.querySelector(".berries");
+let money = 120000;
+berries.textContent = money;
 
 akumanomiSection.appendChild(parameciaSection);
 akumanomiSection.appendChild(logiaSection);
@@ -49,25 +51,23 @@ genderSection.querySelector(".next").addEventListener("click", function () {
   let myName = userName.value;
   userName.value = "";
   let charGender = [];
-  setLocalStorage("user-name", myName);
+
   let selectedCheckBoxes = selectedBoxesRadio(this.form);
   charGender.push(selectedCheckBoxes);
+
+  if (myName === "") {
+    alert("Your name is missing");
+    return false;
+  } else if (selectedCheckBoxes.length === 0) {
+    alert("Your gender is missing");
+    return false;
+  }
   setLocalStorage("gender", charGender);
+  setLocalStorage("user-name", myName);
   genderSection.style.display = "none";
   raceSection.style.display = "block";
 });
 
-nStyleButton.addEventListener("click", function () {
-  styleSection.style.display = "none";
-  akumanomiSection.style.display = "flex";
-});
-nFruitButton.addEventListener("click", function () {
-  akumanomiSection.style.display = "none";
-  hakiSection.style.display = "flex";
-});
-nHakiButton.addEventListener("click", function () {
-  document.location.href = "../buildchar/charactersheet.html";
-});
 // LIST TO PUT IN STORAGE
 const userName = document.querySelector(".name");
 const powerList = [];
@@ -83,12 +83,16 @@ fetch(path)
     const raceList = data["race"];
     const professionList = data["profession"];
     const styleList = data["style"];
-    const hakiList = data["haki"];
-    console.table(data["style"]);
+    const kenbunshokuList = data["Kenbunshoku"];
+    const haoshokuList = data["Haoshoku"];
+    const busoshokuList = data["Busoshoku"];
+    console.table(data);
     raceList.forEach(raceTemplate);
     professionList.forEach(professionTemplate);
     styleList.forEach(styleTemplate);
-    hakiList.forEach(hakiTemplate);
+    kenbunshokuList.forEach(kenHakiTemplate);
+    haoshokuList.forEach(haoHakiTemplate);
+    busoshokuList.forEach(busHakiTemplate);
   });
 
 fetch(path1)
@@ -103,6 +107,79 @@ fetch(path1)
     parameciaList.forEach(parameciaTemplate);
     logiaList.forEach(logiaTemplate);
     zoamList.forEach(zoamTemplate);
+
+    nFruitButton.addEventListener("click", function () {
+      let selectedCheckBoxesf = selectedBoxesRadio(this.form);
+      const fruits = [];
+      if (selectedCheckBoxesf.length === 3) {
+        alert("Select an Item");
+        return false;
+      }
+      parameciaList.forEach(function (r, k) {
+        if (selectedCheckBoxesf.includes(r.name)) {
+          if (money < r.price) {
+            alert("No money for the item.");
+            return false;
+          }
+          money -= r.price;
+          berries.textContent = money;
+          fruits.push(r.name);
+          powerList.push(r.power);
+          priceList.push(r.price);
+          setLocalStorage("akuma-no-mi", fruits);
+          setLocalStorage("power", powerList);
+          setLocalStorage("price", priceList);
+          akumanomiSection.style.display = "none";
+          hakiSection.style.display = "flex";
+        } else {
+          return false;
+        }
+         
+      });
+      logiaList.forEach(function (r, k) {
+        if (selectedCheckBoxesf.includes(r.name)) {
+          if (money < r.price) {
+            alert("No money for the item.");
+            return false;
+          }
+          money -= r.price;
+          berries.textContent = money;
+          fruits.push(r.name);
+          powerList.push(r.power);
+          priceList.push(r.price);
+          setLocalStorage("akuma-no-mi", fruits);
+          setLocalStorage("power", powerList);
+          setLocalStorage("price", priceList);
+          akumanomiSection.style.display = "none";
+          hakiSection.style.display = "flex";
+        } else {
+          return false;
+        }
+        
+      });
+      zoamList.forEach(function (r, k) {
+        if (selectedCheckBoxesf.includes(r.name)) {
+          if (money < r.price) {
+            alert("No money for the item.");
+            return false;
+          }
+          money -= r.price;
+          berries.textContent = money;
+          fruits.push(r.name);
+          powerList.push(r.power);
+          priceList.push(r.price);
+          setLocalStorage("akuma-no-mi", fruits);
+          setLocalStorage("model", r.model);
+          setLocalStorage("power", powerList);
+          setLocalStorage("price", priceList);
+          akumanomiSection.style.display = "none";
+          hakiSection.style.display = "flex";
+        } else {
+          return false;
+        }
+         
+      });
+    });
   });
 
 fetch(path)
@@ -113,17 +190,26 @@ fetch(path)
     let profList = data["profession"];
     let raceList = data["race"];
     let styleList = data["style"];
-    let hakiList = data["haki"];
+    const kenbunshokuList = data["Kenbunshoku"];
+    const haoshokuList = data["Haoshoku"];
+    const busoshokuList = data["Busoshoku"];
     console.table(data);
     // BUTTON TO PUSH ALL ELEMENTS SELECTED INTO THE LOCAL STORAGE
     nProfessionButton.addEventListener("click", function () {
-      professionSection.style.display = "none";
-      styleSection.style.display = "flex";
       let selectedCheckBoxes = selectedBoxes(this.form);
       const professionList = [];
-
+      if (selectedCheckBoxes.length === 0) {
+        alert("Select an Item");
+        return false;
+      }
       profList.forEach(function (r, k) {
         if (selectedCheckBoxes.includes(r.name)) {
+          if (money < r.price) {
+            alert("No money for the item.");
+            return false;
+          }
+          money -= r.price;
+          berries.textContent = money;
           professionList.push(r.name);
           powerList.push(r.power);
           priceList.push(r.price);
@@ -133,25 +219,151 @@ fetch(path)
         } else {
           return false;
         }
+          professionSection.style.display = "none";
+          styleSection.style.display = "flex";
       });
     });
 
     nRaceButton.addEventListener("click", function () {
-      raceSection.style.display = "none";
-      professionSection.style.display = "block";
       let selectedCheckBoxesr = selectedBoxesRadio(this.form);
       const races = [];
+      if (selectedCheckBoxesr.length === 1) {
+        alert("Select an Item");
+        return false;
+      }
       raceList.forEach(function (r, k) {
         if (selectedCheckBoxesr.includes(r.name)) {
+          if (money < r.price) {
+            alert("No money for the item.");
+            return false;
+          }
+          money -= r.price;
+          berries.textContent = money;
           races.push(r.name);
           powerList.push(r.power);
           priceList.push(r.price);
           setLocalStorage("race", races);
           setLocalStorage("power", powerList);
           setLocalStorage("price", priceList);
+          raceSection.style.display = "none";
+          professionSection.style.display = "block";
         } else {
           return false;
         }
+      });
+    });
+
+    nStyleButton.addEventListener("click", function () {
+      let selectedCheckBoxess = selectedBoxesRadio(this.form);
+      const styles = [];
+      if (selectedCheckBoxess.length === 2) {
+        alert("Select an Item");
+        return false;
+      }
+      styleList.forEach(function (r, k) { 
+        if (selectedCheckBoxess.includes(r.name)) {
+          if (money < r.price) {
+            alert("No money for the item.");
+            return false;
+          }
+          money -= r.price;
+          berries.textContent = money;
+          styles.push(r.name);
+          powerList.push(r.power);
+          priceList.push(r.price);
+          setLocalStorage("style", styles);
+          setLocalStorage("power", powerList);
+          setLocalStorage("price", priceList);
+          styleSection.style.display = "none";
+          akumanomiSection.style.display = "flex";
+        } else {
+          return false;
+        }
+         
+          
+          
+        
+      });
+    });
+
+    nHakiButton.addEventListener("click", function () {
+      let selectedCheckBoxesh = selectedBoxesRadio(this.form);
+      const hakis = [];
+      const hakiLevel = [];
+      if (selectedCheckBoxesh.length === 4) {
+        alert("Select an Item");
+        return false;
+      }
+      kenbunshokuList.forEach(function (r, k) {
+        if (selectedCheckBoxesh.includes(r.value)) {
+          if (money < r.price) {
+            alert("No money for the item.");
+            return false;
+          }
+          money -= r.price;
+          berries.textContent = money;
+          hakis.push(r.name);
+          hakiLevel.push(r.level);
+          powerList.push(r.power);
+          priceList.push(r.price);
+          setLocalStorage("hakis", hakis);
+          setLocalStorage("haki-level", hakiLevel);
+          setLocalStorage("power", powerList);
+          setLocalStorage("price", priceList);
+          
+        } else {
+          return false;
+        }
+         
+          haoshokuList.forEach(function (r, k) {
+            if (selectedCheckBoxesh.includes(r.value)) {
+              if (money < r.price) {
+                alert("No money for the item.");
+                return false;
+              }
+              money -= r.price;
+              berries.textContent = money;
+              hakis.push(r.name);
+              hakiLevel.push(r.level);
+              powerList.push(r.power);
+              priceList.push(r.price);
+              setLocalStorage("hakis", hakis);
+              setLocalStorage("haki-level", hakiLevel);
+              setLocalStorage("power", powerList);
+              setLocalStorage("price", priceList);
+              
+            } else {
+              return false;
+            }
+             
+              busoshokuList.forEach(function (r, k) {
+                if (selectedCheckBoxesh.includes(r.value)) {
+                  if (money < r.price) {
+                    alert("No money for the item.");
+                    return false;
+                  }
+                  money -= r.price;
+                  berries.textContent = money;
+                  hakis.push(r.name);
+                  hakiLevel.push(r.level);
+                  powerList.push(r.power);
+                  priceList.push(r.price);
+                  setLocalStorage("hakis", hakis);
+                  setLocalStorage("haki-level", hakiLevel);
+                  setLocalStorage("power", powerList);
+                  setLocalStorage("price", priceList);
+                  
+                } else {
+                  return false;
+                }
+                
+                  setLocalStorage("berries", money);
+                  document.location.href = "../buildchar/charactersheet.html";
+                
+              });
+            
+          });
+        
       });
     });
   });
@@ -368,79 +580,119 @@ function logiaTemplate(data) {
   }
 }
 function zoamTemplate(data) {
-  const models = data.model;
+  let li = document.createElement("li");
+  let input = document.createElement("input");
+  input.setAttribute("type", "radio");
+  input.setAttribute("id", `myCheckboxf${checkId3}`);
+  input.setAttribute("name", "akuma-no-mi");
+  input.setAttribute("value", data.name);
+  let label = document.createElement("label");
+  label.setAttribute("class", "check-img");
+  label.setAttribute("for", `myCheckboxf${checkId3}`);
+  let img = document.createElement("img");
+  img.setAttribute("src", data.image);
+  img.setAttribute("alt", data.name + "Model: " + data.model);
+  let div = document.createElement("div");
+  div.setAttribute("class", "price");
+  let img1 = document.createElement("img");
+  img1.setAttribute("src", "../images/Berrysymbol.svg.png");
+  img1.setAttribute("alt", "berry");
+  img1.setAttribute("class", "berry-icon");
+  let span = document.createElement("span");
 
-  for (const model of models) {
-    let li = document.createElement("li");
-    let input = document.createElement("input");
-    input.setAttribute("type", "radio");
-    input.setAttribute("id", `myCheckboxf${checkId3}`);
-    input.setAttribute("name", "akuma-no-mi");
-    input.setAttribute("value", data.name);
-    let label = document.createElement("label");
-    label.setAttribute("class", "check-img");
-    label.setAttribute("for", `myCheckboxf${checkId3}`);
-    let img = document.createElement("img");
-    img.setAttribute("src", model.image);
-    img.setAttribute("alt", data.name + "Model: " + model.nick);
-    let div = document.createElement("div");
-    div.setAttribute("class", "price");
-    let img1 = document.createElement("img");
-    img1.setAttribute("src", "../images/Berrysymbol.svg.png");
-    img1.setAttribute("alt", "berry");
-    img1.setAttribute("class", "berry-icon");
-    let span = document.createElement("span");
+  label.innerHTML = `${data.name} <br> ${data.model}<br>`;
+  span.textContent = data.price;
 
-    label.innerHTML = `${data.name} <br> ${model.nick}<br>`;
-    span.textContent = model.price;
+  li.appendChild(input);
+  li.appendChild(label);
+  label.appendChild(img);
+  div.appendChild(img1);
+  div.appendChild(span);
+  li.appendChild(div);
+  zoams.appendChild(li);
 
-    li.appendChild(input);
-    li.appendChild(label);
-    label.appendChild(img);
-    div.appendChild(img1);
-    div.appendChild(span);
-    li.appendChild(div);
-    zoams.appendChild(li);
-
-    if (checkId3 != 0) {
-      checkId3 += 1;
-    }
+  if (checkId3 != 0) {
+    checkId3 += 1;
   }
 }
 
-function hakiTemplate(data) {
-  const levels = data.level;
-  let div = document.createElement("div");
-  let h2 = document.createElement("h2");
-  div.setAttribute("class", "haki-type");
-  div.appendChild(h2);
-  for (const level of levels) {
-    let label = document.createElement("label");
-    label.setAttribute("class", "label");
-    let input = document.createElement("input");
-    input.setAttribute("type", "radio");
-    input.setAttribute("name", data.name);
-    let span1 = document.createElement("span");
-    let div1 = document.createElement("div");
-    div1.setAttribute("class", "price");
-    let img1 = document.createElement("img");
-    img1.setAttribute("src", "../images/Berrysymbol.svg.png");
-    img1.setAttribute("alt", "berry");
-    img1.setAttribute("class", "berry-icon");
-    let span = document.createElement("span");
+function kenHakiTemplate(data) {
+  let label = document.createElement("label");
+  label.setAttribute("class", "label");
+  let input = document.createElement("input");
+  input.setAttribute("type", "radio");
+  input.setAttribute("name", data.name);
+  input.setAttribute("value", data.value);
+  let span1 = document.createElement("span");
+  let div1 = document.createElement("div");
+  div1.setAttribute("class", "price");
+  let img1 = document.createElement("img");
+  img1.setAttribute("src", "../images/Berrysymbol.svg.png");
+  img1.setAttribute("alt", "berry");
+  img1.setAttribute("class", "berry-icon");
+  let span = document.createElement("span");
 
-    span1.textContent = level.name;
-    span.textContent = level.price;
+  span1.textContent = data.level;
+  span.textContent = data.price;
 
-    div.appendChild(label);
-    label.appendChild(input);
-    label.appendChild(span1);
-    div.appendChild(div1);
-    div1.appendChild(img1);
-    div1.appendChild(span);
-  }
-  h2.textContent = data.name;
-  hakis.appendChild(div);
+  label.appendChild(input);
+  label.appendChild(span1);
+  div1.appendChild(img1);
+  div1.appendChild(span);
+  kenHaki.appendChild(label);
+  kenHaki.appendChild(div1);
+}
+function haoHakiTemplate(data) {
+  let label = document.createElement("label");
+  label.setAttribute("class", "label");
+  let input = document.createElement("input");
+  input.setAttribute("type", "radio");
+  input.setAttribute("name", data.name);
+  input.setAttribute("value", data.value);
+  let span1 = document.createElement("span");
+  let div1 = document.createElement("div");
+  div1.setAttribute("class", "price");
+  let img1 = document.createElement("img");
+  img1.setAttribute("src", "../images/Berrysymbol.svg.png");
+  img1.setAttribute("alt", "berry");
+  img1.setAttribute("class", "berry-icon");
+  let span = document.createElement("span");
+
+  span1.textContent = data.level;
+  span.textContent = data.price;
+
+  label.appendChild(input);
+  label.appendChild(span1);
+  div1.appendChild(img1);
+  div1.appendChild(span);
+  haoHaki.appendChild(label);
+  haoHaki.appendChild(div1);
+}
+function busHakiTemplate(data) {
+  let label = document.createElement("label");
+  label.setAttribute("class", "label");
+  let input = document.createElement("input");
+  input.setAttribute("type", "radio");
+  input.setAttribute("name", data.name);
+  input.setAttribute("value", data.value);
+  let span1 = document.createElement("span");
+  let div1 = document.createElement("div");
+  div1.setAttribute("class", "price");
+  let img1 = document.createElement("img");
+  img1.setAttribute("src", "../images/Berrysymbol.svg.png");
+  img1.setAttribute("alt", "berry");
+  img1.setAttribute("class", "berry-icon");
+  let span = document.createElement("span");
+
+  span1.textContent = data.level;
+  span.textContent = data.price;
+
+  label.appendChild(input);
+  label.appendChild(span1);
+  div1.appendChild(img1);
+  div1.appendChild(span);
+  busHaki.appendChild(label);
+  busHaki.appendChild(div1);
 }
 
 function selectedBoxes(form) {

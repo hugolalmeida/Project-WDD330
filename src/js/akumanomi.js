@@ -97,47 +97,43 @@ function logiaTemplate(logia) {
   logiaDiv.appendChild(div);
 }
 function zoamTemplate(zoam) {
-  const models = zoam.model;
+  let div = document.createElement("div");
+  div.classList.add("card", "swiper-slide");
+  let div1 = document.createElement("div");
+  div1.classList.add("face", "face1");
+  let div2 = document.createElement("div");
+  div2.setAttribute("class", "content");
+  let img = document.createElement("img");
+  img.setAttribute("src", zoam.image);
+  img.setAttribute("alt", zoam.name + "Model: " + zoam.model);
+  let h3 = document.createElement("h3");
+  let div3 = document.createElement("div");
+  div3.classList.add("face", "face2");
+  let div4 = document.createElement("div");
+  div4.setAttribute("class", "content");
+  let h41 = document.createElement("h4");
+  h41.setAttribute("class", "subtittle");
+  let h4 = document.createElement("h4");
+  h4.setAttribute("class", "subtittle");
+  let p = document.createElement("p");
+  p.setAttribute("class", "home-text");
 
-  for (const model of models) {
-    let div = document.createElement("div");
-    div.classList.add("card", "swiper-slide");
-    let div1 = document.createElement("div");
-    div1.classList.add("face", "face1");
-    let div2 = document.createElement("div");
-    div2.setAttribute("class", "content");
-    let img = document.createElement("img");
-    img.setAttribute("src", model.image);
-    img.setAttribute("alt", zoam.name + "Model: " + model.nick);
-    let h3 = document.createElement("h3");
-    let div3 = document.createElement("div");
-    div3.classList.add("face", "face2");
-    let div4 = document.createElement("div");
-    div4.setAttribute("class", "content");
-    let h41 = document.createElement("h4");
-    h41.setAttribute("class", "subtittle");
-    let h4 = document.createElement("h4");
-    h4.setAttribute("class", "subtittle");
-    let p = document.createElement("p");
-    p.setAttribute("class", "home-text");
+  //  VALUING CONTENTS
+  h3.textContent = zoam.name;
+  h41.textContent = "Model: " + zoam.model;
+  h4.textContent = zoam.user;
+  p.textContent = zoam.desc;
 
-    //  VALUING CONTENTS
-    h3.textContent = zoam.name;
-    h41.textContent = "Model: " + model.nick;
-    h4.textContent = model.user;
-    p.textContent = model.desc;
+  // APPENDING CONTENTS
+  div.appendChild(div1);
+  div.appendChild(div3);
+  div1.appendChild(div2);
+  div2.appendChild(img);
+  div2.appendChild(h3);
+  div3.appendChild(div4);
+  div4.appendChild(h41);
+  div4.appendChild(h4);
+  div4.appendChild(p);
 
-    // APPENDING CONTENTS
-    div.appendChild(div1);
-    div.appendChild(div3);
-    div1.appendChild(div2);
-    div2.appendChild(img);
-    div2.appendChild(h3);
-    div3.appendChild(div4);
-    div4.appendChild(h41);
-    div4.appendChild(h4);
-    div4.appendChild(p);
-
-    zoanDiv.appendChild(div);
-  }
+  zoanDiv.appendChild(div);
 }

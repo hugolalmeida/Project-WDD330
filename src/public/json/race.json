@@ -166,80 +166,110 @@
       "power": 200
     }
   ],
-  "haki": [
+  "Kenbunshoku": [
     {
       "name": "Kenbunshoku Haki",
       "description": "",
-      "level": [
-        {
-          "name": "Basic",
-          "description": "",
-          "price": "10000",
-          "power": "500"
-        },
-        {
-          "name": "Intermediate",
-          "description": "",
-          "price": "15000",
-          "power": "1000"
-        },
-        {
-          "name": "Advanced",
-          "description": "",
-          "price": "30000",
-          "power": "3000"
-        }
-      ]
+      "level": "None",
+      "price": 0,
+      "power": 0,
+      "value": "non1"
+    },
+    {
+      "name": "Kenbunshoku Haki",
+      "description": "",
+      "level": "Basic",
+      "price": 10000,
+      "power": 500,
+      "value": "ken1"
+    },
+    {
+      "name": "Kenbunshoku Haki",
+      "level": "Intermediate",
+      "description": "",
+      "price": 15000,
+      "power": 1000,
+      "value": "ken2"
+    },
+    {
+      "name": "Kenbunshoku Haki",
+      "level": "Advanced",
+      "description": "",
+      "price": 30000,
+      "power": 3000,
+      "value": "ken3"
+    }
+  ],
+  "Haoshoku": [
+    {
+      "name": "Haoshoku Haki",
+      "description": "",
+      "level": "None",
+      "price": 0,
+      "power": 0,
+      "value": "non2"
     },
     {
       "name": "Haoshoku Haki",
       "description": "",
 
-      "level": [
-        {
-          "name": "Basic",
-          "description": "",
-          "price": "15000",
-          "power": "3000"
-        },
-        {
-          "name": "Intermediate",
-          "description": "",
-          "price": "25000",
-          "power": "6000"
-        },
-        {
-          "name": "Advanced",
-          "description": "",
-          "price": "50000",
-          "power": "10000"
-        }
-      ]
+      "level": "Basic",
+
+      "price": 15000,
+      "power": 3000,
+      "value": "hao1"
+    },
+    {
+      "name": "Haoshoku Haki",
+      "level": "Intermediate",
+      "description": "",
+      "price": 25000,
+      "power": 6000,
+      "value": "hao2"
+    },
+    {
+      "name": "Haoshoku Haki",
+      "level": "Advanced",
+      "description": "",
+      "price": 50000,
+      "power": 10000,
+      "value": "hao3"
+    }
+  ],
+  "Busoshoku": [
+    {
+      "name": "Busoshoku Haki",
+      "description": "",
+      "level": "None",
+      "price": 0,
+      "power": 0,
+      "value": "non3"
     },
     {
       "name": "Busoshoku Haki",
       "description": "",
 
-      "level": [
-        {
-          "name": "Basic",
-          "description": "",
-          "price": "10000",
-          "power": "500"
-        },
-        {
-          "name": "Intermediate",
-          "description": "",
-          "price": "15000",
-          "power": "1000"
-        },
-        {
-          "name": "Advanced",
-          "description": "",
-          "price": "30000",
-          "power": "3000"
-        }
-      ]
+      "level": "Basic",
+
+      "price": 10000,
+      "power": 500,
+      "value": "bus1"
+    },
+    {
+      "name": "Busoshoku Haki",
+      "level": "Intermediate",
+      "description": "",
+      "price": 15000,
+      "power": 1000,
+      "value": "bus2"
+    },
+    {
+      "name": "Busoshoku Haki",
+      "level": "Advanced",
+      "description": "",
+      "price": 30000,
+      "power": 3000,
+      "value": "bus3"
     }
   ]
 }
