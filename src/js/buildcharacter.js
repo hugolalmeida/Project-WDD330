@@ -35,7 +35,7 @@ const kenHaki = document.getElementById("ken-haki");
 const haoHaki = document.getElementById("hao-haki");
 const busHaki = document.getElementById("bus-haki");
 const berries = document.querySelector(".berries");
-let money = 120000;
+let money = 200000;
 berries.textContent = money;
 
 akumanomiSection.appendChild(parameciaSection);
