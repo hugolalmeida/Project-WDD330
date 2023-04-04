@@ -134,7 +134,6 @@ fetch(path1)
         } else {
           return false;
         }
-         
       });
       logiaList.forEach(function (r, k) {
         if (selectedCheckBoxesf.includes(r.name)) {
@@ -155,7 +154,6 @@ fetch(path1)
         } else {
           return false;
         }
-        
       });
       zoamList.forEach(function (r, k) {
         if (selectedCheckBoxesf.includes(r.name)) {
@@ -177,7 +175,6 @@ fetch(path1)
         } else {
           return false;
         }
-         
       });
     });
   });
@@ -219,8 +216,8 @@ fetch(path)
         } else {
           return false;
         }
-          professionSection.style.display = "none";
-          styleSection.style.display = "flex";
+        professionSection.style.display = "none";
+        styleSection.style.display = "flex";
       });
     });
 
@@ -260,7 +257,7 @@ fetch(path)
         alert("Select an Item");
         return false;
       }
-      styleList.forEach(function (r, k) { 
+      styleList.forEach(function (r, k) {
         if (selectedCheckBoxess.includes(r.name)) {
           if (money < r.price) {
             alert("No money for the item.");
@@ -279,10 +276,6 @@ fetch(path)
         } else {
           return false;
         }
-         
-          
-          
-        
       });
     });
 
@@ -310,12 +303,31 @@ fetch(path)
           setLocalStorage("haki-level", hakiLevel);
           setLocalStorage("power", powerList);
           setLocalStorage("price", priceList);
-          
         } else {
           return false;
         }
-         
-          haoshokuList.forEach(function (r, k) {
+
+        haoshokuList.forEach(function (r, k) {
+          if (selectedCheckBoxesh.includes(r.value)) {
+            if (money < r.price) {
+              alert("No money for the item.");
+              return false;
+            }
+            money -= r.price;
+            berries.textContent = money;
+            hakis.push(r.name);
+            hakiLevel.push(r.level);
+            powerList.push(r.power);
+            priceList.push(r.price);
+            setLocalStorage("hakis", hakis);
+            setLocalStorage("haki-level", hakiLevel);
+            setLocalStorage("power", powerList);
+            setLocalStorage("price", priceList);
+          } else {
+            return false;
+          }
+
+          busoshokuList.forEach(function (r, k) {
             if (selectedCheckBoxesh.includes(r.value)) {
               if (money < r.price) {
                 alert("No money for the item.");
@@ -331,39 +343,14 @@ fetch(path)
               setLocalStorage("haki-level", hakiLevel);
               setLocalStorage("power", powerList);
               setLocalStorage("price", priceList);
-              
             } else {
               return false;
             }
-             
-              busoshokuList.forEach(function (r, k) {
-                if (selectedCheckBoxesh.includes(r.value)) {
-                  if (money < r.price) {
-                    alert("No money for the item.");
-                    return false;
-                  }
-                  money -= r.price;
-                  berries.textContent = money;
-                  hakis.push(r.name);
-                  hakiLevel.push(r.level);
-                  powerList.push(r.power);
-                  priceList.push(r.price);
-                  setLocalStorage("hakis", hakis);
-                  setLocalStorage("haki-level", hakiLevel);
-                  setLocalStorage("power", powerList);
-                  setLocalStorage("price", priceList);
-                  
-                } else {
-                  return false;
-                }
-                
-                  setLocalStorage("berries", money);
-                  document.location.href = "../buildchar/charactersheet.html";
-                
-              });
-            
+
+            setLocalStorage("berries", money);
+            document.location.href = "../buildchar/charactersheet.html";
           });
-        
+        });
       });
     });
   });

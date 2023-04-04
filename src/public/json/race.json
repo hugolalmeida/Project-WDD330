@@ -196,7 +196,7 @@
       "level": "Advanced",
       "description": "",
       "price": 30000,
-      "power": 3000,
+      "power": 7000,
       "value": "ken3"
     }
   ],
@@ -268,7 +268,7 @@
       "level": "Advanced",
       "description": "",
       "price": 30000,
-      "power": 3000,
+      "power": 7000,
       "value": "bus3"
     }
   ]

@@ -47,5 +47,11 @@
     "name": "King of the Pirates",
     "description": "A legendary pirate who reached the top of the world, who conquered the entire sea, the one who stands at the top of the yonkous and the world. It is they who became known as the King of Pirates.",
     "image": "../images/level/king.jpg"
+  },
+  {
+    "name": "god Usopp",
+    "description": "Only god Usopp.",
+    "image": "https://i.pinimg.com/originals/7b/fe/7f/7bfe7f081f553d5c80ba8910d645c944.jpg"
   }
+
 ]

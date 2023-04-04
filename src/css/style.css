@@ -1203,17 +1203,87 @@ input[type="radio"][id^="myCheckboxf"] {
 /* CHARACTER SHEET PAGE */
 .sheet {
   margin-top: 100px;
-  background-color: white;
-  width: 500px;
-  height: 700px;
+  background:var(--colorGold);
+  width: 600px;
+  height: 90%;
+  margin-right: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   grid-column: 3/5;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+#name-gender, .sheet-sections{
+  display: flex; 
+  margin-left: 28%;
+  margin-right: 30px;
+}
+hr{
+  width: 100%;
+}
+.align1{
+  text-align: left;
+  width: 40%;
+}
+.align{
+  text-align: left;
+  width: 50%;
+}
+.align, .align1{
+  margin-left: auto;
+  margin-right: auto;
+}
+.subtittle-sheet{
+  font-family: "kalam";
+  font-size: 1.3em;
+  margin: 10px;
+}
+.input-sheet{
+  font-family: "indie flower";
+  font-size: 1.2em;
+  margin: 10px;
+}
+.input-sheet1{
+  font-family: "indie flower";
+  font-size: 1.5em;
+  margin: 10px;
 }
 .char-level {
   margin-top: 100px;
-  background-color: yellow;
-  width: 500px;
-  height: 700px;
+  background:var(--colorGold);
+  width: 600px;
+  height: 90%;
+  margin-left: 20px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   grid-column: 5/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.level-img{
+  width: 500px;
+  margin-top: 20px;
+  
+  display: flex;
+  justify-content: center;
+}
+.level-pic{
+  width: 300px; 
+  align-self: first baseline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.level-picture{
+  width: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.level-desc{
+  margin-top: 20px;
+  width: 400px;
 }
 
 @media screen and (max-width: 769px) {

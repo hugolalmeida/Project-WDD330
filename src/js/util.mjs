@@ -39,9 +39,11 @@ export async function loadHeaderFooter() {
 }
 
 // save data to local storage
-export function setLocalStorage(key, list) {
-
-  localStorage.setItem(key, list);
+export function setLocalStorage(key, data) {
+  const storageData = {
+    data: data
+  };
+  localStorage.setItem(key, JSON.stringify(storageData));
 }
 
 // retrieve data from localstorage
@@ -51,4 +53,25 @@ export function getLocalStorage(key) {
     return null;
   }
   return storageData.data;
+}
+
+// export function eachItem(list){
+//   let item = "";
+//   for(let i=0; i<list.length;i++){
+    
+//     item = list[i];
+//     return item;
+//   }
+  
+// }
+
+export function sumList(list){
+  let total = 0;
+  for(let i=0; i<list.length;i++){
+    
+    total += list[i];
+  }
+  
+  
+  return total;
 }
