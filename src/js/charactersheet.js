@@ -1,4 +1,4 @@
-import { loadHeaderFooter,  getLocalStorage, sumList} from "./util.mjs";
+import { loadHeaderFooter, getLocalStorage, sumList } from "./util.mjs";
 import levelDisplay from "./level-display.mjs";
 loadHeaderFooter().then();
 
@@ -18,7 +18,6 @@ const hakiLevel = document.getElementById("h-level");
 
 const model = document.getElementById("model");
 
-
 // GET DATAS FROM LOCALSTORAGE
 let powerList = getLocalStorage("power");
 let profList = getLocalStorage("profession");
@@ -37,7 +36,6 @@ hakiLevel.textContent = hakiLevelList.join(" | ");
 let totalPower = sumList(powerList);
 userPower.textContent = totalPower;
 
-
 fetch(path)
   .then(function (response) {
     return response.json();
@@ -48,11 +46,3 @@ fetch(path)
     const displayLevel = new levelDisplay(totalPower, levelList);
     displayLevel.init();
   });
-
-
-
-
-
-
-
-
