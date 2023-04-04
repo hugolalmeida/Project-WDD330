@@ -55,15 +55,6 @@ export function getLocalStorage(key) {
   return storageData.data;
 }
 
-// export function eachItem(list){
-//   let item = "";
-//   for(let i=0; i<list.length;i++){
-    
-//     item = list[i];
-//     return item;
-//   }
-  
-// }
 
 export function sumList(list){
   let total = 0;

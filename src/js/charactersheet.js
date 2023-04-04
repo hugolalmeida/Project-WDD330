@@ -3,7 +3,7 @@ import levelDisplay from "./level-display.mjs";
 loadHeaderFooter().then();
 
 // PATH
-const path = "../public/json/level.json";
+const path = "../json/level.json";
 
 // LOCALSTORAGE ITENS
 const userName = document.getElementById("user-name");

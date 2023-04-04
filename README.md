@@ -7,5 +7,5 @@ The project is an One Piece API to allow the users to build their own character
 
 
 
-Is missing add the js file on the dist directory
+
 
