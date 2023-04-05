@@ -1,5 +1,7 @@
 # Project-WDD330
-The project is an One Piece API to allow the users to build their own character
+The project is an One Piece API to allow the users to build their own character in the One Piece Universe!
+
+![buildCharGif](https://user-images.githubusercontent.com/104458556/230112814-5c54ea8c-e820-4a0e-ab90-ea1d8f515d31.gif)
 
 ## Prerequisites
 
