@@ -20,7 +20,7 @@ The project is an One Piece API to allow the users to build their own character 
 - `npm run format` to run Prettier to automatically format your code.
 
 ## Domain Site
-*https://opbuildchar.netlify.app
+https://opbuildchar.netlify.app
 
 ## Contributing
 Because it is a college project, another contribuitions are not necessary.
