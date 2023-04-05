@@ -22,7 +22,11 @@ The project is an One Piece API to allow the users to build their own character 
 ## Domain Site
 *https://opbuildchar.netlify.app
 
+## Contributing
+Because it is a college project, another contribuitions are not necessary.
 
+## Author
+- Hugo L Almeida
 
 
 
