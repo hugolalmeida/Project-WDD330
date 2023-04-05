@@ -13,7 +13,7 @@ export default class levelDisplay {
         const usopp = document.getElementById("usopp");
         const charDecription = document.getElementById("char-description");
         // KING PIRATE LEVEL
-        if (power >= 28000){
+        if (power >= 27000){
           charLevel.textContent = data[8].name;
           let img = document.createElement("img");
           img.setAttribute("src", data[8].image);
