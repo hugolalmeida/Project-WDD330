@@ -35,7 +35,7 @@ const kenHaki = document.getElementById("ken-haki");
 const haoHaki = document.getElementById("hao-haki");
 const busHaki = document.getElementById("bus-haki");
 const berries = document.querySelector(".berries");
-let money = 200000;
+let money = 140000;
 berries.textContent = money;
 
 akumanomiSection.appendChild(parameciaSection);
@@ -65,7 +65,7 @@ genderSection.querySelector(".next").addEventListener("click", function () {
   setLocalStorage("gender", charGender);
   setLocalStorage("user-name", myName);
   genderSection.style.display = "none";
-  raceSection.style.display = "block";
+  raceSection.style.display = "flex";
 });
 
 // LIST TO PUT IN STORAGE
