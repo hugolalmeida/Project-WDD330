@@ -1299,6 +1299,48 @@ hr {
   .slide-content {
     margin: 0 63px;
   }
+  .welcome-build {
+    width: 300px;
+  }
+  .build-section {
+    width: 300px;
+    height: 350px;
+  }
+  .race-section,
+  .profession-section {
+    width: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+  }
+  .style-section,
+  .haki-div {
+    width: 300px;
+  }
+  .paramecia-section,
+  .logia-section,
+  .zoam-section {
+    width: 300px;
+  }
+  .hakis {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .haki-type {
+    align-items: center;
+  }
+  .sheet {
+    width: 100%;
+    grid-column: 1/11;
+    margin-right: 0px;
+  }
+  .char-level {
+    width: 100%;
+    grid-column: 1/11;
+    grid-row: 2/3;
+    margin-left: 0px;
+  }
 }
 @media screen and (max-width: 400px) {
   .slide-content {
