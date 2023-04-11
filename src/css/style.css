@@ -1341,6 +1341,63 @@ hr {
     grid-row: 2/3;
     margin-left: 0px;
   }
+  .topnav {
+    height: 20%;
+    position: relative;
+  }
+  /* .logo{
+    display: none;
+  } */
+  .navbars a {
+    padding: 2px;
+    font-size: 10px;
+  }
+  #fighting-styles {
+    grid-column: 1/11;
+  }
+  .fight-img,
+  .fight-img1 {
+    display: none;
+  }
+  .fighting-section,
+  .fighting-section1,
+  .fighting-section2 {
+    width: 100%;
+    height: auto;
+  }
+  .home-flex {
+    grid-column: 1/11;
+  }
+  .side-card {
+    grid-column: 1/11;
+    grid-row: 1/2;
+    height: auto;
+    margin-left: 0px;
+  }
+  .haki-banner {
+    grid-column: 1/11;
+    grid-row: 2/3;
+    margin-top: 10px;
+  }
+  .haki-banner1 {
+    grid-column: 1/11;
+    grid-row: 3/4;
+  }
+  .haki-banner2 {
+    grid-column: 1/11;
+    grid-row: 4/5;
+  }
+  .side-img {
+    display: none;
+  }
+  .img-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .slideshow-container {
+    display: none;
+  }
 }
 @media screen and (max-width: 400px) {
   .slide-content {
